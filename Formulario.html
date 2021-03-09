@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Formulario.css"> 
+
+
+
+<body>
+<header class="header">
+<h1 id="title"> Covid-19, A casi un año de aislamiento</h1>
+<p id="description"> Gracias por sumarte a esta pequeña encuesta para saber como mejorar la información que recibes</p>
+</header>
+
+<div class="container">
+<form id="survey-form">
+
+ <div>
+ <label for="name" id="name-label">Nombre:</label><br>
+ <input id="name" type="text" placeholder="Introduzca su nombre" required>
+ </div>
+ 
+ <div>
+ <label for="email" id="email-label">Correo Electronico:</label><br>
+ <input id="email" type="email" placeholder="Introduzca su correo" required>
+ </div>
+ 
+ <div>
+ <label for="number" id="number-label">Edad:</label><br>
+ <input id="number" type="number" min="0" max="120" placeholder="Edad" requiered>
+ </div>
+ 
+ <div>
+   <p><strong>¿Qué tipo de información te gustaría recibir?</strong></p>
+ <select id="dropdown" requiered>
+ <option disabled selected value>Seleccionar...</option>
+ <option>Casos de Contagio a nivel mundial</option>
+ <option>Tasa de mortalidad por país</option>
+ <option>Artículos de noticia sobre el Covid-19</option>
+ <option>Paises libres de Covid</option>
+ </select>
+ </div><br>
+ 
+ <div> 
+ <p><strong>¿Cómo te gustaría recibir información acerca el covid-19?</strong></p>
+ <label  for="decition_1">
+ <input id="decition_1" value="decition_1" type="radio" name="decisions" requiered>Diaria</label>
+  
+  <label  for="decition_2">
+  <input id="decition_2" value="decition_2" type="radio" name="decisions" requiered>Semanal</label>
+  
+  <label for="decition_3">
+  <input id="decition_3" value="decition_3" type="radio" name="decisions" requiered>Mensual</label>
+  </div><br>
+ 
+ 
+ <div class="datos"> 
+  <p><strong>Escoge alguna de las opciones por las cuales quieres recibir información</strong></p>
+
+  <label  for="decition_5">
+  <input id="decition_5" value="decition_5" type="checkbox" name="decisions_1" requiered>Correo</label>
+ <br>
+  
+  <label for="decition_6">
+  <input id="decition_6" value="decition_6" type="checkbox" name="decisions_1" requiered>Instagram</label>
+ <br>
+   
+  <label for="decition_7">
+  <input id="decition_7" value="decition_7" type="checkbox" name="decisions_1" requiered>Facebook</label>
+ <br>
+ 
+  <label for="decition_8">
+  <input id="decition_8" value="decition_8" type="checkbox" name="decisions_1" requiered>Twitter</label>
+ <br>
+
+  <label  for="decition_4">
+  <input id="decition_4" value="decition_4" type="checkbox" name="decisions_1" requiered>Todas las anteriores</label><br>
+ </div><br>
+
+ <div class="datos">
+   <p><strong> Déjanos tus comentario</strong></p>
+ <textarea  id="textarea" placeholder="Comentarios aquí"></textarea>
+ </div>
+ 
+ <div class="datos">
+ <button type="submit" id="submit" class="submit-button">Enviar</button>
+ </div>
+ 
+ 
+</form>
+</div>
+</body>
+
+
+
+</html>
